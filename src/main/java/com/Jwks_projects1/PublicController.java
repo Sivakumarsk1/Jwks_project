@@ -7,8 +7,9 @@ import java.util.Map;
 @RestController
 public class PublicController {
 
+
     @GetMapping("/public")
-    public Map<String, String> publicMessage() {
-        return Map.of("message", "This is a public message!");
+    public String publicEndpoint() {
+        return "This is a public endpoint";
     }
 }
